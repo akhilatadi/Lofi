@@ -1,0 +1,132 @@
+.navbar_container{
+    height:60px;
+    background-color: #e1b6d8;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+  
+    
+
+z-index:9;
+
+width:100%;
+
+}
+
+.logo_name{
+    color:white;
+    font-size:2rem;
+    font-weight:bold;
+    flex:0.2;
+    justify-content:flex-start;
+    display:flex;
+ margin-left:3rem;
+    align-items: center;
+     margin-bottom:10px;
+
+}
+.hover{
+    color:white;
+}
+.hover:hover{
+    color:rgb(29, 72, 108);
+}
+.space{
+    flex:0.5;
+}
+.navbar_content{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    flex:0.3;
+    color:white;
+    margin-right:20px;
+}
+.navbar_content p{
+    cursor:pointer;
+    transition:0.5s;
+    font-size:1.1rem;
+    background-color:rgba(53, 51, 51, 0.19);
+    padding:0.3rem 0.5rem;;
+    border-radius:4px;
+    text-decoration: none;
+    color:white;
+}
+.navbar_content p:hover{
+   transform:scale(1.1); 
+}
+
+.link{
+text-decoration: none;
+}
+
+.navIcon{
+    display:none;
+        }
+        .basket{
+            display:none;  
+        }
+
+@media(max-width: 1200px){
+    .space{
+        flex:0.4;
+    
+    }
+    .logo_name{
+        margin-left:1rem;
+    }
+    .navbar_content{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex:0.5;
+       
+        color:white;
+    }
+    .navIcon{
+display:none;
+    }
+    .basket{
+        display:none;  
+    }
+}
+
+@media(max-width: 780px){
+    .space{
+        flex:0.5;
+    
+    }
+    .navbar_content{
+        display:none;
+       
+    } 
+    
+    .logo_name{
+        color:white;
+        font-size:2rem;
+        font-weight:bold;
+        flex:0.3;
+        justify-content:flex-start;
+        display:flex;
+   
+        align-items: center;
+    }
+    .navIcon{
+      
+        display: flex;
+     opacity:100%;
+     color:white;
+font-size:1.7rem;
+
+cursor: pointer;
+    }
+    .basket{
+        display:flex;
+        margin-left:11rem; 
+        font-size:1rem;
+    }
+}

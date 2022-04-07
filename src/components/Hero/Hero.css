@@ -1,0 +1,51 @@
+.hero_cont {
+    display: flex;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
+    ), url("../../images/brush.jpg");
+    height: 90vh;
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+ 
+}
+
+.hero_wrapper{
+    color:white;
+ flex-direction: column;
+    display: flex;
+    justify-content: center;
+align-items: flex-start;
+margin-top:20vh;
+height:40vh;
+
+
+}
+.hero_wrapper h1{
+    margin-left:2rem;
+    font-size:3rem;
+  
+}
+.hero_wrapper button{
+    background-color: transparent;
+    padding:0.5rem 0.8rem;
+    border-radius:4px;
+    border:3px solid #e1b6d8;
+    color:white;
+    font-size:1rem;
+    font-weight:normal;
+    margin-left:2rem;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero_wrapper button:hover{
+    background-color:#e1b6d8;
+    transform:scale(1.1);
+    font-weight:bold;
+}
+@media(max-width:800px){
+}
